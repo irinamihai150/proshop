@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap"
@@ -6,15 +6,18 @@ import Rating from "../components/Rating"
 import Loader from "../components/Loader"
 import Message from "../components/Message"
 import { listProductsDetails } from "../actions/productActions"
+import { useParams } from "react-router-dom"
 
-const ProductScreen = ({ match}) => {
+const ProductScreen = ({ match }) => {
+	const { id } = useParams()
 
 	const dispatch = useDispatch()
 	const productDetails = useSelector((state) => state.productDetails)
 	const { loading, error, product } = productDetails
 	useEffect(() => {
-		dispatch(listProductsDetails(match.params.id))
-	}, [dispatch, match])
+		// dispatch(listProductsDetails(match.params.id))
+		dispatch(listProductsDetails(id))
+	}, [dispatch, id])
 
 	return (
 		<>

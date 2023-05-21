@@ -10,3 +10,14 @@ I would like to acknowledge and give credit to the original source of the tutori
 [Brad Traversy]
 [https://codeyourfuture.udemy.com/course/mern-ecommerce/learn/lecture/22494380#questions]
 ![Screenshot](frontend/src/images/1.png)
+import { FaReact, FaDatabase, FaPostman, FaLock } from 'react-icons/fa';
+
+
+
+- Technologies Used:
+  - React Redux <FaReact />
+  - MongoDB <FaDatabase />
+  - Postman <FaPostman />
+  - Bcrypt <FaLock />
+
+Technologies Used : React Redux, MongoDB, Mongoose, Postman, Bcrypt.

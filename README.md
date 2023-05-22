@@ -12,7 +12,7 @@ I would like to acknowledge and give credit to the original source of the tutori
 ![Screenshot](frontend/src/images/1.png)
 
 - Technologies Used:
-  - React Redux
+  - React Redux --
   - MongoDB
   - Postman
   - Bcrypt

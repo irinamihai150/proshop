@@ -11,11 +11,8 @@ I would like to acknowledge and give credit to the original source of the tutori
 [https://codeyourfuture.udemy.com/course/mern-ecommerce/learn/lecture/22494380#questions]
 ![Screenshot](frontend/src/images/1.png)
 
-
-
-
 - Technologies Used:
-  - React Redux <FaReact />
-  - MongoDB <FaDatabase />
-  - Postman <FaPostman />
-  - Bcrypt <FaLock />
+  - React Redux
+  - MongoDB
+  - Postman
+  - Bcrypt

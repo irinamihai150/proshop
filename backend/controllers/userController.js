@@ -8,10 +8,12 @@ import User from "../models/userModel.js"
 
 const authUser = asyncHandler(async (req, res) => {
 	const { email, password } = req.body
-
+	console.log("Email:", email)
+	console.log("Password:", password)
 	const user = await User.findOne({ email })
-
+	console.log("User:", user)
 	if (user && (await user.matchPassword(password))) {
+		console.log("Authentication successful")
 		res.json({
 			_id: user._id,
 			name: user.name,
@@ -57,7 +59,7 @@ const registerUser = asyncHandler(async (req, res) => {
 	}
 })
 
-// //@descget user profile
+// //@desc get user profile
 // //@route GET/api/users/profile
 // //@access Private
 const getUserProfile = asyncHandler(async (req, res) => {
@@ -74,4 +76,4 @@ const getUserProfile = asyncHandler(async (req, res) => {
 		throw new Error("User not found")
 	}
 })
-export { authUser,registerUser, getUserProfile }
+export { authUser, registerUser, getUserProfile }

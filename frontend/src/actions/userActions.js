@@ -1,4 +1,4 @@
-import { application } from "express"
+// import { application } from "express"
 import {
 	USER_LOGIN_FAIL,
 	USER_LOGIN_REQUEST,
@@ -12,7 +12,7 @@ export const login = (email, password) => async (dispatch) => {
 		})
 		const config = {
 			headers: {
-				"Content-type": application / json,
+				"Content-type": "application/json",
 			},
 		}
 		const { data } = await axios.post(

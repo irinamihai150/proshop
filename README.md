@@ -13,6 +13,6 @@ I would like to acknowledge and give credit to the original source of the tutori
 
 - Technologies Used:
   - React Redux --
-  - MongoDB
+  - MongoDB --
   - Postman
   - Bcrypt

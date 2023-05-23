@@ -7,9 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import CartScreen from "./screens/CartScreen"
 import LoginScreen from "./screens/LoginScreen"
 import RegisterScreen from "./screens/RegisterScreen"
+import ProfileScreen from "./screens/ProfileScreen"
 const App = () => {
-	console.log("Rendering App component...")
-
 	return (
 		<Router>
 			<Header />
@@ -17,6 +16,7 @@ const App = () => {
 				<Container>
 					<Routes>
 						<Route path='/register' element={<RegisterScreen />} />
+						<Route path='/profile' element={<ProfileScreen />} />
 						<Route path='/login' element={<LoginScreen />} />
 						<Route path='/product/:id' element={<ProductScreen />} />
 						<Route path='/cart/:id?' element={<CartScreen />} />

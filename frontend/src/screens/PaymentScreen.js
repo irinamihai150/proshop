@@ -28,18 +28,18 @@ const PaymentScreen = () => {
 			<Form onSubmit={submitHandler}>
 				<Form.Group>
 					<Form.Label as='legend'> Select Method</Form.Label>
-				</Form.Group>
-				<Col>
-					<Form.Check
-						type='radio'
-						label='Paypal or Credit Card'
-						id='Paypal'
-						name='paymentMethod'
-						value='Paypal'
-						checked
-						onChange={(e) => setPaymentMethod(e.target.value)}
-					></Form.Check>
-					{/* <Form.Check
+
+					<Col>
+						<Form.Check
+							type='radio'
+							label='Paypal or Credit Card'
+							id='Paypal'
+							name='paymentMethod'
+							value='Paypal'
+							checked
+							onChange={(e) => setPaymentMethod(e.target.value)}
+						></Form.Check>
+						{/* <Form.Check
 						type='radio'
 						label='Stripe'
 						id='Stripe'
@@ -47,7 +47,8 @@ const PaymentScreen = () => {
 						value='Stripe'
 						onChange={(e) => setPaymentMethod(e.target.value)}
 					></Form.Check> */}
-				</Col>
+					</Col>
+				</Form.Group>
 				<Button type='submit' variant='primary'>
 					Continue
 				</Button>

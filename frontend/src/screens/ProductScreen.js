@@ -83,12 +83,6 @@ const ProductScreen = () => {
 													value={qty}
 													onChange={(e) => setQty(e.target.value)}
 												>
-													{/* Add options for the select input */}
-													{/* {[...Array(product.countInStock).keys()].map((x) => (
-														<option key={x + 1} value={x + 1}>
-															{x + 1}
-														</option>
-													))} */}
 													{[
 														...Array.from({
 															length: product.countInStock,
